@@ -17,16 +17,16 @@ function App() {
   return (
     <div className="App">
      <h2 className={`${count%2===0 ? "red" : "green"}`}>counter: {count} </h2>
-     <button onClick={() => {
+     <button  className='add' onClick={() => {
        handleChange(1)
      }} >add</button>
-     <button onClick={() => {
+     <button className='sub' onClick={() => {
        if (count <= 0) {
          return
        }
        handleChange(-1)
      }}>sub</button>
-     <button onClick={() => {
+     <button className='dbl' onClick={() => {
        handleDouble(2)
      }}>double</button>
      <h3 className= {count % 2 === 0 ? "red" : "green"}>Number is {count % 2 === 0 ? "Even" : "Odd"}</h3>
